@@ -1,5 +1,5 @@
 <template>
-    
+    <CrudComponent></CrudComponent>
 </template>
 
 <script>

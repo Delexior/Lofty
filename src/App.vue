@@ -21,7 +21,7 @@
         <router-link class="no-decor" to ='/crud'>
           <v-list-item>
             <v-list-item-icon>
-              <v-icon color="#2196F3">mdi-magnify</v-icon>
+              <v-icon color="#2196F3">mdi-table</v-icon>
             </v-list-item-icon>
             <v-list-item-content class="menu-link">
               <v-list-item-title>CRUD таблица</v-list-item-title>
@@ -52,12 +52,14 @@
             dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Lofty test task</v-toolbar-title>
+      <v-row justify="center">
+        <v-toolbar-title>Lofty</v-toolbar-title>
+      </v-row>
+
     </v-app-bar>
 
     <v-content>
       <v-container
-              class="fill-height"
               fluid
       >
         <router-view></router-view>
@@ -68,18 +70,23 @@
             app
     >
       <v-row justify="center">
-        <span class="white--text">Lofty &copy; {{footerDate}}</span>
+        <span class="white--text">Дмитрий Обрубов &copy; {{footerDate}}</span>
       </v-row>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+  import HomeComponent from "./components/HomeComponent";
+
   export default {
     data: () => ({
       drawer: null,
       footerDate: new Date().getUTCFullYear(),
     }),
+    components:{
+      HomeComponent
+    }
   }
 </script>
 

@@ -10,6 +10,7 @@
                             <span class="head-title">Тестовое задание</span>
                         </v-card-title>
                     </v-row>
+
                     <v-row class="fill-height align-content-center" justify="center">
                         <v-card
                                 class="elevation-0"

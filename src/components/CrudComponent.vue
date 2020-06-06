@@ -53,6 +53,7 @@
                 </v-card-title>
             </v-card>
         </v-row>
+
         <v-row>
             <v-col class="ma-2 pa-2">
                 <v-btn  @click="editDialog = !editDialog" color="teal" class="flex-fill" small>
@@ -61,6 +62,7 @@
             </v-col>
 
         </v-row>
+
         <v-row>
             <v-data-table
                 class="elevation-3 flex-fill"
@@ -92,7 +94,7 @@
 
 <script>
     import data from '../assets/data.json';
-    
+
     export default {
         name: "CrudComponent",
 

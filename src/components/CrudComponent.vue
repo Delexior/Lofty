@@ -92,7 +92,7 @@
 
 <script>
     import data from '../assets/data.json';
-
+    
     export default {
         name: "CrudComponent",
 
@@ -191,15 +191,9 @@
             saveData(){
                 if (this.editingItemIndex > -1) {
                     Object.assign(this.itemsForTable[this.editingItemIndex], this.editedItem);
-                    this.$nextTick(() => {
-                        this.jsonData = JSON.stringify(this.itemsForTable);
-                    })
 
                 } else {
                     this.itemsForTable.push(this.editedItem);
-                    this.$nextTick(() => {
-                        this.jsonData = JSON.stringify(this.itemsForTable);
-                    })
                 }
                 this.cancelEditing()
             },
@@ -219,8 +213,9 @@
             },
 
             deleteItem(item){
-                const index = this.itemsForTable.indexOf(item)
-                confirm('Вы точно хотите удалить этот товар?') && this.itemsForTable.splice(index, 1)
+                const index = this.itemsForTable.indexOf(item);
+                confirm('Вы точно хотите удалить этот товар?') && this.itemsForTable.splice(index, 1);
+
             }
         }
 

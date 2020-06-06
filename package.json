@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "bl": "^4.0.2",
     "browserify-fs": "^1.0.0",
     "core-js": "^3.6.5",
     "fs": "0.0.1-security",

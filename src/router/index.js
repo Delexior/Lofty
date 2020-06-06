@@ -21,6 +21,12 @@ Vue.use(VueRouter)
     path: '/crud',
     name: 'Crud',
     component: () => import('../views/Crud.vue')
+  },
+  {
+    path: "*",
+    name: "PageNotFound",
+    component: () => import("../views/PageNotFound.vue")
+
   }
 ]
 

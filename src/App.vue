@@ -52,10 +52,6 @@
             dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-row justify="center">
-        <v-toolbar-title>Lofty</v-toolbar-title>
-      </v-row>
-
     </v-app-bar>
 
     <v-content>
